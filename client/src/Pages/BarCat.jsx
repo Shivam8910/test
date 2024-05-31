@@ -6,8 +6,7 @@ import AccountProvider from "../context/AccountProvider";
 import Appbar from "../Components/Appbar";
 import { AccountContext } from "../context/AccountProvider";
 import { useCallback, useContext, useEffect, useState } from "react";
-import { useAuth0 } from "@auth0/auth0-react";
-import { deleteUserFromLobby } from "../service/lobbyApi";
+import { deleteUserFromLobby } from "../../service/api";
 import axios from "axios";
 import { CurrentUserContext } from "../context/CurrentUserContext";
 
@@ -106,7 +105,6 @@ const renderer = ({ minutes, seconds }) => (
 
 function BarCat() {
   const { language, topicHeader, topic, lobbyId } = useParams();
-  const { isAuthenticated } = useAuth0();
   const account = useContext(AccountContext);
   const { currentUser, loading } = useContext(CurrentUserContext);
   const navigate = useNavigate();
@@ -159,10 +157,6 @@ function BarCat() {
 
   if (loading) {
     return <div>Loading...</div>;
-  }
-
-  if (!isAuthenticated || !currentUser) {
-    return <div>No user data available</div>;
   }
 
   if (lobby?.hasMeetingStarted === true) {
