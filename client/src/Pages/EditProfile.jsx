@@ -12,7 +12,7 @@ import {
 import EditIcon from "@mui/icons-material/Edit";
 import Appbar from "../Components/Appbar";
 import { useLocation } from "react-router-dom";
-import { updateUserProfile } from "../../service/api";
+import { updateUserProfile } from "../service/api";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

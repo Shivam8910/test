@@ -6,7 +6,7 @@ import AccountProvider from "../context/AccountProvider";
 import Appbar from "../Components/Appbar";
 import { AccountContext } from "../context/AccountProvider";
 import { useCallback, useContext, useEffect, useState } from "react";
-import { deleteUserFromLobby } from "../../service/api";
+import { deleteUserFromLobby } from "../service/lobbyApi";
 import axios from "axios";
 import { CurrentUserContext } from "../context/CurrentUserContext";
 

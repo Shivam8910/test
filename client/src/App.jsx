@@ -9,10 +9,8 @@ import BarCat from "./Pages/BarCat";
 import Services from "./Pages/Services";
 import EditProfile from "./Pages/EditProfile";
 import Quiz from "./Pages/Quiz";
-//import RoomPage from "./Pages/RoomPage";
+import RoomPage from "./Pages/RoomPage";
 import QuizzStart from "./Components/QuizzStart";
-import EndCall from "./Pages/EndCall";
-import Dummy from "./Pages/Dummy";
 
 const theme = createTheme({
   palette: {
@@ -96,7 +94,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/room/:language/:topicHeader/:topic/:roomId",
-    element: <Dummy />,
+    element: <RoomPage />,
   },
   {
     path: "/editp",
@@ -109,10 +107,6 @@ const router = createBrowserRouter([
   {
     path: "/quiz/:lang",
     element: <Quiz />,
-  },
-  {
-    path: "/endcall",
-    element: <EndCall />,
   },
 ]);
 

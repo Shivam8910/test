@@ -2,7 +2,7 @@
 
 import React, { createContext, useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import { getUsers } from "../../service/api";
+import { getUsers } from "../service/api";
 
 // Create the context
 export const CurrentUserContext = createContext();

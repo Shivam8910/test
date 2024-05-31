@@ -55,9 +55,14 @@ const RoomPage = () => {
       showPreJoinView: false,
 
       onLeaveRoom: () => {
-        navigate("/endcall");
+        navigate("/");
       },
     });
+
+    setInterval(() => {
+      zc.destroy();
+      navigate("/");
+    }, 900000);
   };
 
   const getTopicDetails = () => {
