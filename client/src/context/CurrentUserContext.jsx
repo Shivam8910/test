@@ -1,8 +1,8 @@
 // src/context/CurrentUserContext.js
 
-import React, { createContext, useState, useEffect } from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-import { getUsers } from '../service/api';
+import React, { createContext, useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
+import { getUsers } from "../../service/api";
 
 // Create the context
 export const CurrentUserContext = createContext();
@@ -22,7 +22,7 @@ export const CurrentUserProvider = ({ children }) => {
           setCurrentUser(loggedInUser);
         }
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error("Error fetching user data:", error);
       } finally {
         setLoading(false);
       }
