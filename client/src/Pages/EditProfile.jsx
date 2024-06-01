@@ -94,7 +94,7 @@ function EditProfile() {
           src={
             picture
               ? URL.createObjectURL(picture)
-              : `http://localhost:8000/${currentUser.picture}`
+              : `https://test-micmzxzzv-shivam8910s-projects.vercel.app/${currentUser.picture}`
           }
           alt="Profile Photo"
           sx={{ width: "10rem", height: "10rem" }}

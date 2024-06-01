@@ -62,7 +62,7 @@ function NameSlide({ lobby }) {
                 user.picture
                   ? user.picture.startsWith("http")
                     ? user.picture
-                    : `http://localhost:8000/${user.picture}`
+                    : `https://test-micmzxzzv-shivam8910s-projects.vercel.app/${user.picture}`
                   : picture
                   ? URL.createObjectURL(picture)
                   : "fallback_image_url.jpg"

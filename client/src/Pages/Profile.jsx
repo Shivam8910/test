@@ -154,7 +154,7 @@ function Profile() {
                     currentUser.picture
                       ? currentUser.picture.startsWith("http")
                         ? currentUser.picture
-                        : `http://localhost:8000/${currentUser.picture}`
+                        : `https://test-micmzxzzv-shivam8910s-projects.vercel.app/${currentUser.picture}`
                       : picture
                       ? URL.createObjectURL(picture)
                       : "fallback_image_url.jpg"
@@ -243,7 +243,7 @@ function Profile() {
                   currentUser.picture
                     ? currentUser.picture.startsWith("http")
                       ? currentUser.picture
-                      : `http://localhost:8000/${currentUser.picture}`
+                      : `https://test-micmzxzzv-shivam8910s-projects.vercel.app/${currentUser.picture}`
                     : picture
                     ? URL.createObjectURL(picture)
                     : "fallback_image_url.jpg"

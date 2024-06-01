@@ -10,7 +10,7 @@ import { deleteUserFromLobby } from "../service/lobbyApi";
 import axios from "axios";
 import { CurrentUserContext } from "../context/CurrentUserContext";
 
-const url = "http://localhost:8000";
+const url = "https://test-micmzxzzv-shivam8910s-projects.vercel.app";
 
 const BackPart = styled(Box)`
   position: absolute;
