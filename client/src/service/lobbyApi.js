@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:8000";
+const url = "https://test-micmzxzzv-shivam8910s-projects.vercel.app";
 
 export const getLobbies = async () => {
   try {
