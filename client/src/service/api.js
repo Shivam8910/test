@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://test-gf54v9rb3-shivam8910s-projects.vercel.app";
+const url = "http://localhost:8000";
 
 export const addUser = async (data) => {
   try {
